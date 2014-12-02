@@ -27,6 +27,8 @@ gem "spring",        group: :development
 
 group :development do
   gem "rubocop", require: false
+  gem "brakeman", require: false
+  gem "rails_best_practices", require: false
 end
 # Use ActiveModel has_secure_password
 # gem "bcrypt", "~> 3.1.7"
