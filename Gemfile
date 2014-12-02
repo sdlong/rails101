@@ -27,6 +27,7 @@ gem "spring",        group: :development
 
 gem "bootstrap-sass"
 gem "simple_form"
+gem "devise"
 
 group :development do
   gem "rubocop", require: false
