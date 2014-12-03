@@ -6,8 +6,12 @@ Rails.application.routes.draw do
       post :join
       post :quit
     end
-
     resources :posts, except: [:show, :index]
+  end
+
+  namespace :account do
+    resources :groups
+    resources :posts
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
