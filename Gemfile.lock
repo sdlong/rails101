@@ -28,7 +28,27 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    ast (2.0.0)
+    astrolabe (1.3.0)
+      parser (>= 2.2.0.pre.3, < 3.0)
+    awesome_print (1.2.0)
+    bcrypt (3.1.7)
+    bootstrap-sass (3.2.0.0)
+      sass (~> 3.2)
+    brakeman (2.6.3)
+      erubis (~> 2.6)
+      fastercsv (~> 1.5)
+      haml (>= 3.0, < 5.0)
+      highline (~> 1.6.20)
+      multi_json (~> 1.2)
+      ruby2ruby (~> 2.1.1)
+      ruby_parser (~> 3.5.0)
+      sass (~> 3.0)
+      slim (>= 1.3.6, < 3.0)
+      terminal-table (~> 1.4)
     builder (3.2.2)
+    code_analyzer (0.4.5)
+      sexp_processor
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -36,8 +56,19 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    colored (1.2)
+    devise (3.2.4)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.2.2)
+    fastercsv (1.5.5)
+    haml (4.0.5)
+      tilt
+    highline (1.6.21)
     hike (1.2.3)
     i18n (0.6.11)
     jbuilder (2.2.5)
@@ -53,7 +84,12 @@ GEM
     mime-types (1.25.1)
     minitest (5.4.3)
     multi_json (1.10.1)
+    orm_adapter (0.5.0)
+    parser (2.2.0.pre.8)
+      ast (>= 1.1, < 3.0)
+      slop (~> 3.4, >= 3.4.5)
     polyglot (0.3.5)
+    powerpack (0.0.9)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -67,14 +103,38 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.6)
       sprockets-rails (~> 2.0)
+    rails_best_practices (1.15.4)
+      activesupport
+      awesome_print
+      code_analyzer (>= 0.4.3)
+      colored
+      erubis
+      i18n
+      json
+      require_all
+      ruby-progressbar
     railties (4.1.6)
       actionpack (= 4.1.6)
       activesupport (= 4.1.6)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
+    rainbow (2.0.0)
     rake (10.4.0)
     rdoc (4.1.2)
       json (~> 1.4)
+    require_all (1.3.2)
+    rubocop (0.27.1)
+      astrolabe (~> 1.3)
+      parser (>= 2.2.0.pre.7, < 3.0)
+      powerpack (~> 0.0.6)
+      rainbow (>= 1.99.1, < 3.0)
+      ruby-progressbar (~> 1.4)
+    ruby-progressbar (1.7.0)
+    ruby2ruby (2.1.3)
+      ruby_parser (~> 3.1)
+      sexp_processor (~> 4.0)
+    ruby_parser (3.5.0)
+      sexp_processor (~> 4.1)
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)
@@ -84,6 +144,14 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    sexp_processor (4.4.4)
+    simple_form (3.0.2)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
+    slim (2.1.0)
+      temple (~> 0.6.9)
+      tilt (>= 1.3.3, < 2.1)
+    slop (3.6.0)
     spring (1.2.0)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -95,6 +163,8 @@ GEM
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
     sqlite3 (1.3.9)
+    temple (0.6.10)
+    terminal-table (1.4.5)
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
@@ -108,17 +178,25 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
+  brakeman
   coffee-rails (~> 4.0.0)
+  devise
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.1.6)
+  rails_best_practices
+  rubocop
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
+  simple_form
   spring
   sqlite3
   turbolinks
