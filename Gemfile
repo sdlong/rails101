@@ -29,6 +29,10 @@ gem "bootstrap-sass"
 gem "simple_form"
 gem "devise"
 
+group :production do
+  gem "mysql2"
+end
+
 group :development do
   gem "rubocop", require: false
   gem "brakeman", require: false
