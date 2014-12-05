@@ -37,10 +37,10 @@ group :development do
   gem "rubocop", require: false
   gem "brakeman", require: false
   gem "rails_best_practices", require: false
-  gem 'capistrano',  '~> 3.1', require: false
-  gem 'capistrano-rvm', '~> 0.1.1', require: false
-  gem 'capistrano-rails', '~> 1.1', require: false
-  gem 'capistrano-rbenv', '~> 2.0', require: false # production server 使用 rbenv
+  gem "capistrano",  "~> 3.1", require: false
+  gem "capistrano-rvm", "~> 0.1.1", require: false
+  gem "capistrano-rails", "~> 1.1", require: false
+  gem "capistrano-rbenv", "~> 2.0", require: false # production server use rbenv
 end
 # Use ActiveModel has_secure_password
 # gem "bcrypt", "~> 3.1.7"
