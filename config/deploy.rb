@@ -44,6 +44,6 @@ set :linked_dirs, fetch(:linked_dirs, []).push("bin", "log", "tmp/pids", "tmp/ca
 after "deploy:publishing", "deploy:restart"
 namespace :deploy do
   task :restart do
-    invoke "unicorn:reload"
+    invoke "unicorn:restart"
   end
 end
